@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semangat Kerjanya Hari Ini!</title>
+    <style>
+        /* Reset dasar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling halaman */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #FFD700, #FF6347);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            color: #333;
+        }
+
+        /* Kontainer utama */
+        .container {
+            text-align: center;
+            animation: bounce 2s infinite;
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* Gaya teks utama */
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 2px 2px #FF6347;
+            animation: rainbow 3s infinite;
+            margin-bottom: 20px;
+        }
+
+        /* Emoji */
+        .emoji {
+            font-size: 4rem;
+            animation: spin 4s linear infinite;
+            margin: 10px 0;
+        }
+
+        /* Animasi */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes rainbow {
+            0% { color: #FF6347; }
+            25% { color: #FFD700; }
+            50% { color: #7FFFD4; }
+            75% { color: #FF69B4; }
+            100% { color: #FF6347; }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Styling responsif */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .emoji {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">💪😊✨</div>
+        <h1>SEMANGAT KERJANYA HARI INI NUSA ❤️ !</h1>
+        <div class="emoji">🔥🚀🌟</div>
+    </div>
+</body>
+</html>
